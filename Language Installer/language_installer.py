@@ -6,12 +6,6 @@ def install_java():
     subprocess.run(["sudo", "apt-get", "update"])
     subprocess.run(["sudo", "apt-get", "install", "-y", "openjdk-11-jdk"])
 
-def install_php():
-    """Install PHP"""
-    print("Installing PHP...")
-    subprocess.run(["sudo", "apt-get", "update"])
-    subprocess.run(["sudo", "apt-get", "install", "-y", "php7.4-fpm", "php7.4-mysql"])
-
 def install_golang():
     """Install Go"""
     print("Installing Go...")
@@ -42,19 +36,100 @@ def install_git():
     subprocess.run(["sudo", "apt-get", "update"])
     subprocess.run(["sudo", "apt-get", "install", "-y", "git"])
 
+def install_ruby():
+    """Install Ruby"""
+    print("Installing Ruby...")
+    subprocess.run(["sudo", "apt-get", "update"])
+    subprocess.run(["sudo", "apt-get", "install", "-y", "ruby-full"])
+
+def install_perl():
+    """Install Perl"""
+    print("Installing Perl...")
+    subprocess.run(["sudo", "apt-get", "update"])
+    subprocess.run(["sudo", "apt-get", "install", "-y", "perl"])
+
+def install_python3_dev():
+    """Install Python 3 Dev"""
+    print("Installing Python 3 Dev...")
+    subprocess.run(["sudo", "apt-get", "update"])
+    subprocess.run(["sudo", "apt-get", "install", "-y", "python3-dev"])
+
+def install_swift():
+    """Install Swift"""
+    print("Installing Swift...")
+    subprocess.run(["sudo", "apt-get", "update"])
+    subprocess.run(["sudo", "apt-get", "install", "-y", "swift"])
+
+def install_kotlin():
+    """Install Kotlin"""
+    print("Installing Kotlin...")
+    subprocess.run(["sudo", "apt-get", "update"])
+    subprocess.run(["sudo", "apt-get", "install", "-y", "kotlin"])
+
+def install_scala():
+    """Install Scala"""
+    print("Installing Scala...")
+    subprocess.run(["sudo", "apt-get", "update"])
+    subprocess.run(["sudo", "apt-get", "install", "-y", "scala"])
+
+def install_rust():
+    """Install Rust"""
+    print("Installing Rust...")
+    subprocess.run(["sudo", "apt-get", "update"])
+    subprocess.run(["sudo", "apt-get", "install", "-y", "rustc"])
+
+def install_haskell():
+    """Install Haskell"""
+    print("Installing Haskell...")
+    subprocess.run(["sudo", "apt-get", "update"])
+    subprocess.run(["sudo", "apt-get", "install", "-y", "haskell-platform"])
+
+def install_lisp():
+    """Install Lisp"""
+    print("Installing Lisp...")
+    subprocess.run(["sudo", "apt-get", "update"])
+    subprocess.run(["sudo", "apt-get", "install", "-y", "sbcl"])
+
+def install_scheme():
+    """Install Scheme"""
+    print("Installing Scheme...")
+    subprocess.run(["sudo", "apt-get", "update"])
+    subprocess.run(["sudo", "apt-get", "install", "-y", "guile-2.2"])
+
+def install_erlang():
+    """Install Erlang"""
+    print("Installing Erlang...")
+    subprocess.run(["sudo", "apt-get", "update"])
+    subprocess.run(["sudo", "apt-get", "install", "-y", "erlang"])
+
+def install_elixir():
+    """Install Elixir"""
+    print("Installing Elixir...")
+    subprocess.run(["sudo", "apt-get", "update"])
+    subprocess.run(["sudo", "apt-get", "install", "-y", "elixir"])
+
 def main():
     print("Language Installer Script")
     print("---------------------------")
 
     install_java()
-    install_php()
     install_golang()
     install_cpp()
     install_nodejs()
     install_apache()
     install_git()
-
-    print("Installation complete!")
+    install_ruby()
+    install_perl()
+    install_python3_dev()
+    install_swift()
+    install_kotlin()
+    install_scala()
+    install_rust()
+    install_haskell()
+    install_lisp()
+    install_scheme()
+    install_erlang()
+    install_elixir()
 
 if __name__ == "__main__":
     main()
