@@ -41,7 +41,7 @@ The Language Installer is a Python script designed to simplify the installation 
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/username/language_installer.git
+   git clone https://github.com/dew-sec/language_installer.git
    cd language_installer
    ```
 
