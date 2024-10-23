@@ -1,0 +1,19 @@
+## How to Run
+
+Ready to get started? Here’s how to launch the Language Installer script!
+
+### Using Python 3
+
+For those with Python 3 installed, simply run:
+
+```bash
+python3 language_installer.py
+```
+
+### Using Python
+
+If you prefer to use the default Python version on your system, go ahead with:
+
+```bash
+python language_installer.py
+```
